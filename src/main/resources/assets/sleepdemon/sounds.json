@@ -1,0 +1,21 @@
+{
+  "sleep_demon_whisper": {
+    "category": "player",
+    "sounds": [{ "name": "sleepdemon:sleep_demon_whisper", "stream": false }]
+  },
+
+  "run": {
+    "category": "player",
+    "sounds": [{ "name": "sleepdemon:run", "stream": false }]
+  },
+
+  "i_see_you": {
+    "category": "player",
+    "sounds": [{ "name": "sleepdemon:i_see_you", "stream": false }]
+  },
+
+  "wake_up": {
+    "category": "player",
+    "sounds": [{ "name": "sleepdemon:wake_up", "stream": false }]
+  }
+}
