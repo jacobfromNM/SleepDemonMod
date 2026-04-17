@@ -63,7 +63,9 @@ public class SleepDemonLogic {
 
         Level level = player.getLevel();
         if (!level.isClientSide && level instanceof ServerLevel serverLevel) {
-            serverLevel.setDayTime(18000L);
+            long currentDay = serverLevel.getDayTime() / 24000L;
+            serverLevel.setDayTime(currentDay * 24000L + 18000L);
+
             if ((Boolean) SleepDemonConfig.ENABLE_LOGGING.get()) {
                 LOGGER.info("[Sleep Demon Mod] Set world time to midnight.");
             }
