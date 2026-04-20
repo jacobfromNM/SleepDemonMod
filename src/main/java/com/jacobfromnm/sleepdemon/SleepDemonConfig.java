@@ -26,12 +26,12 @@ public class SleepDemonConfig {
                 builder.pop();
                 builder.comment("Sleep Demon Teleportation Settings").push("teleportation");
                 SLEEP_DEMON_CHANCE = builder
-                                .comment("Chance for the sleep demon to wake/teleport the player (Default: 0.2, Range: 0.01-1.0)")
-                                .defineInRange("sleep_demon_chance", 0.20, 0.01, 1.0);
-                TELEPORT_MIN = builder.comment("Minimum teleport distance from bed (Default: 100, Range: 1-200)")
-                                .defineInRange("teleport_min", 100, 1, 200);
-                TELEPORT_MAX = builder.comment("Maximum teleport distance from bed (Default: 200, Range: 1-500)")
-                                .defineInRange("teleport_max", 200, 1, 500);
+                                .comment("Chance for the sleep demon to wake/teleport the player (Default: 0.1, Range: 0.01-1.0)")
+                                .defineInRange("sleep_demon_chance", 0.10, 0.01, 1.0);
+                TELEPORT_MIN = builder.comment("Minimum teleport distance from bed (Default: 50, Range: 1-200)")
+                                .defineInRange("teleport_min", 50, 1, 200);
+                TELEPORT_MAX = builder.comment("Maximum teleport distance from bed (Default: 100, Range: 1-500)")
+                                .defineInRange("teleport_max", 100, 1, 500);
                 REDUCE_PLAYER_HEALTH = builder
                                 .comment("Reduce player health to 1 heart when teleported (Default: true)")
                                 .define("reduce_player_health", true);
